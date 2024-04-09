@@ -2,6 +2,7 @@ import express from "express";
 import morgan from "morgan"
 import dotenv from "dotenv"
 import { connectToDB } from "./db.js";
+import { errorHandler } from "./error.js";
 
 import bootcampRouter from "./routes/bootcamp.js"
 
@@ -20,5 +21,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/bootcamps', bootcampRouter)
+
+app.use(errorHandler)
 
 app.listen(5000, console.log("App Running"))
