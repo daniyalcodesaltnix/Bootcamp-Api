@@ -1,0 +1,12 @@
+{
+  "name": "bootcamps",
+  "version": "1.0.0",
+  "description": "Bootcamp Project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammed Daniyal",
+  "license": "ISC"
+}
