@@ -1,7 +1,15 @@
 import mongoose from "mongoose";
 
 const BootcampSchema = new mongoose.Schema({
-    name: String
+    name: String,
+    created: {
+        type: Date,
+        default: Date.now
+    },
+    photo: {
+        type: String,
+        default: "default.jpg"
+    }
 })
 
 BootcampSchema.pre('save', function (next) {

@@ -11,3 +11,18 @@ rate-limit
 cors allow all because public api
 
 hpp for html parameter pollution
+
+
+
+model values
+
+type, unique, trim, required, maxlength, default, match
+[true, "msg"], type: [String]
+GeoJson mongoose
+index: '2dsphere' - When you create a geospatial index with the option "2dsphere" in MongoDB, it enables efficient querying of geometries on a sphere, such as finding nearby locations, calculating distances, or determining whether a point is within a certain area.
+photo String in db we want just name of file
+
+Mongoose error handler
+See types of errors mentioned
+
+Upload error while not using different method
