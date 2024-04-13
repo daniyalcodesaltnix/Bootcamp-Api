@@ -1,0 +1,13 @@
+express-mongo-sanitize - sql injections
+
+then app.use(express-mongo-sanitize())
+
+helmet extra security headers
+
+xss clean same for xxs - Data coming from request is affected not ditrectly injected data
+
+rate-limit
+
+cors allow all because public api
+
+hpp for html parameter pollution

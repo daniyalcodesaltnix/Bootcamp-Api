@@ -4,8 +4,9 @@ import asyncHandler from "../asyncHandler.js"
 
 export const getAllBootcamps = asyncHandler(async (req, res, next) => {
     // try {
-    const bootcamps = await Bootcamp.find()
-    throw new Error('error')
+    const bootcamps = await Bootcamp.create(req.body)
+    // const bootcamps = await Bootcamp.find()
+    // throw new Error('error')
     return res.status(200).json({ msg: "Get all bootcamps", data: bootcamps })
     // } catch (err) {
     //     // console.log(err.message)
